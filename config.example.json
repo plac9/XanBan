@@ -1,0 +1,9 @@
+{
+  "TargetUsername": "ChildUser",
+  "AllowedWindows": [
+    { "Start": "07:00", "End": "21:00" }
+  ],
+  "WarnMinutesBefore": [15, 5, 1],
+  "FinalWarningSeconds": 30,
+  "LogoffGraceSeconds": 30
+}
