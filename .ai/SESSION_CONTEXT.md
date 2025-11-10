@@ -1,119 +1,84 @@
 # xanban - Session Context
 
-**Last Updated**: 2025-11-09 17:38
-**Status**: Production
-**Version**: v1.0.0
-**Brand**: LaClair Technologies
+**Last Updated**: 2025-11-10
+**Status**: [Development | Staging | Production | Maintenance]
+**Version**: v0.1.0
 
 ## Quick Status
 
-- **Current Phase**: Production / Parental Controls
-- **Active Work**: Monitoring and maintenance
+- **Current Phase**: Initial setup
+- **Active Work**: Documentation standardization
 - **Blockers**: None
-- **Next Steps**: Update as needed for Xander's usage patterns
+- **Next Steps**: Complete initial implementation
 
 ## Project Overview
 
 ### Purpose
-
-Windows time-based local account enforcement system for parental controls - automatically enables/disables Xander's Windows account based on daily usage windows with warnings before curfew.
+[1-2 sentence description of what this project does]
 
 ### Technology Stack
-
-- **Language**: PowerShell
-- **Scheduler**: Windows Task Scheduler
-- **Permissions**: Runs as SYSTEM
-- **Configuration**: JSON config file
-- **Target**: Windows local accounts (cmdlets)
+- **Language**: [Primary language]
+- **Framework**: [Framework if applicable]
+- **Database**: [Database if applicable]
+- **Infrastructure**: [Deployment platform]
 
 ### Repository Info
-
 - **GitHub**: https://github.com/plac9/xanban
-- **Brand**: LaClair Technologies
-- **Target**: Xander's Windows account
+- **Brand**: [LaClair Tech | Real Time]
 
 ## Current State
 
 ### What's Working
+- Repository structure standardized
+- Documentation framework in place
 
-✅ Daily usage window enforcement
-✅ Configurable start/end times
-✅ Warning notifications (15min, 5min, 1min before curfew)
-✅ Automatic account disable/enable
-✅ User logoff at curfew
-✅ Self-healing at startup (if PC was off during scheduled changes)
-✅ Runs as SYSTEM via scheduled task
+### Known Issues
+- [ ] Initial templates need customization
+- [ ] Project-specific documentation needed
 
-### Configuration
+### Recent Changes
+- **2025-11-10**: Implemented standard documentation structure
 
-**Location**: `C:\ProgramData\XanBan\config.json`
+## Key Files & Locations
 
-**Example**:
-```json
-{
-  "allowedHours": {
-    "start": "07:00",
-    "end": "21:00"
-  },
-  "targetUser": "Xander",
-  "warnings": {
-    "15min": true,
-    "5min": true,
-    "1min": true
-  }
-}
-```
+### Documentation
+- **Session Context**: `.ai/SESSION_CONTEXT.md` (this file)
+- **Architecture**: `.ai/ARCHITECTURE.md`
+- **Troubleshooting**: `docs/TROUBLESHOOTING.md`
+- **Deployment**: `docs/DEPLOYMENT.md`
 
-### Features
-
-1. **Daily Usage Windows**: Configurable start/end times
-2. **Warning Notifications**: 15min, 5min, 1min before curfew
-3. **Automatic Disable**: Account disabled at curfew time
-4. **Automatic Enable**: Account re-enabled at start time
-5. **User Logoff**: Forces logoff at curfew
-6. **Self-Healing**: Catches up on missed changes if PC was off
-7. **System Service**: Runs as SYSTEM for reliability
+### Scripts
+- **Development**: `scripts/dev/`
+- **Deployment**: `scripts/deploy/`
+- **Troubleshooting**: `scripts/troubleshoot/`
 
 ## Development Workflow
 
-### Installation
-
-```powershell
-# Copy XanBan scripts to appropriate location
-# Create scheduled task (as SYSTEM)
-# Configure C:\ProgramData\XanBan\config.json
+### Setup (First Time)
+```bash
+# Setup commands to be added
 ```
 
 ### Common Tasks
-
-```powershell
-# Update allowed hours
-# Edit C:\ProgramData\XanBan\config.json
-
-# Test enforcement
-# Check Windows Task Scheduler
-# View task history
+```bash
+# Common development tasks to be added
 ```
-
-## Use Case
-
-**Target**: Xander's Windows account
-**Allowed Hours**: Typically 07:00-21:00 (7am to 9pm)
-**Purpose**: Enforce healthy screen time limits
-**Warnings**: Give advance notice before account locks
 
 ## Deployment
 
-- **Platform**: Windows (local account management)
-- **Permissions**: SYSTEM (via Task Scheduler)
-- **Config**: JSON file in ProgramData
+### Environments
+- **Development**: Local development
+- **Staging**: [To be configured]
+- **Production**: [To be configured]
 
 ## Resources
 
-- Part of LaClair Technologies portfolio
-- Windows local account cmdlets
-- Task Scheduler documentation
+### Documentation
+- See `docs/README.md` for complete documentation index
+
+### Related Projects
+- Part of [LaClair Tech | Real Time] project portfolio
 
 ---
 
-**Note**: Adjust allowed hours in config.json as needed for Xander's schedule.
+**Note**: This file provides AI session context. Update regularly to keep agents informed.
